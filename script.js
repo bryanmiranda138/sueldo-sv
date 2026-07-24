@@ -290,8 +290,9 @@ document.getElementById('calcForm').addEventListener('submit', function (e) {
 
     document.getElementById('print_datetime').textContent = `${fechaImpresion}, ${horaImpresion}`;
 
+});
 
- // ==========================================
+// ==========================================
 // 3. ENVÍO DE FORMULARIO DE CONTACTO (Netlify AJAX Seguro)
 // ==========================================
 const formContacto = document.getElementById('form-contacto');
@@ -369,4 +370,3 @@ if (btnNuevoMensaje) {
         }
     });
 }
-});
