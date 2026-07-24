@@ -40,11 +40,32 @@ window.addEventListener('afterprint', () => {
     }
 });
 
-// Elementos de Botones
+// ==========================================
+// 1.5 LÓGICA DE PESTAÑAS (ESCRITORIO Y MÓVIL)
+// ==========================================
+
+// Elementos del Menú Móvil
+const btnMenuMovil = document.getElementById('btn-menu-movil');
+const menuMovil = document.getElementById('menu-movil');
+
+// Abrir / Cerrar menú desplegable móvil
+if (btnMenuMovil && menuMovil) {
+    btnMenuMovil.addEventListener('click', () => {
+        menuMovil.classList.toggle('hidden');
+    });
+}
+
+// Elementos de Botones Escritorio
 const btnCalculadora = document.getElementById('btn-calculadora');
 const btnLeyes = document.getElementById('btn-leyes');
 const btnContacto = document.getElementById('btn-contacto');
 const btnPrivacidad = document.getElementById('btn-privacidad');
+
+// Elementos de Botones Móviles
+const btnCalculadoraMovil = document.getElementById('btn-calculadora-movil');
+const btnLeyesMovil = document.getElementById('btn-leyes-movil');
+const btnContactoMovil = document.getElementById('btn-contacto-movil');
+const btnPrivacidadMovil = document.getElementById('btn-privacidad-movil');
 
 // Elementos de Vistas
 const vistaCalculadora = document.getElementById('vista-calculadora');
@@ -54,42 +75,66 @@ const vistaPrivacidad = document.getElementById('vista-privacidad');
 
 // Función Global para cambiar de Pestaña
 function mostrarVista(nombreVista) {
-    // Ocultar todas las vistas
+    // 1. Ocultar el menú móvil si está abierto (para que no estorbe al cambiar de vista)
+    if (menuMovil && !menuMovil.classList.contains('hidden')) {
+        menuMovil.classList.add('hidden');
+    }
+
+    // 2. Ocultar todas las vistas
     vistaCalculadora.classList.add('hidden');
     vistaLeyes.classList.add('hidden');
     vistaContacto.classList.add('hidden');
     vistaPrivacidad.classList.add('hidden');
 
-    // Desactivar estilos de todos los botones
+    // 3. Clases de diseño (Tailwind)
+    // Clases Escritorio
+    const inactiveClass = "tab-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-all duration-200 text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-700/50 border border-transparent whitespace-nowrap";
+    const activeClass = "tab-btn active-tab px-3 py-1.5 text-xs sm:text-sm font-semibold rounded-md transition-all duration-200 bg-white dark:bg-slate-700 shadow-sm text-blue-600 dark:text-blue-400 border border-slate-200/50 dark:border-slate-600 whitespace-nowrap";
+    
+    // Clases Móvil
+    const inactiveMovilClass = "w-full text-left px-4 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg";
+    const activeMovilClass = "w-full text-left px-4 py-2.5 text-sm font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-slate-700/50 rounded-lg";
+
+    // 4. Desactivar estilos de TODOS los botones (Escritorio y Móvil)
     [btnCalculadora, btnLeyes, btnContacto, btnPrivacidad].forEach(btn => {
-        if(btn) {
-            btn.className = "tab-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-all duration-200 text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-700/50 border border-transparent whitespace-nowrap";
-        }
+        if(btn) btn.className = inactiveClass;
+    });
+    [btnCalculadoraMovil, btnLeyesMovil, btnContactoMovil, btnPrivacidadMovil].forEach(btn => {
+        if(btn) btn.className = inactiveMovilClass;
     });
 
-    const activeClass = "tab-btn active-tab px-3 py-1.5 text-xs sm:text-sm font-semibold rounded-md transition-all duration-200 bg-white dark:bg-slate-700 shadow-sm text-blue-600 dark:text-blue-400 border border-slate-200/50 dark:border-slate-600 whitespace-nowrap";
-
-    // Activar la vista y el botón seleccionado
+    // 5. Activar la vista y encender los botones seleccionados correspondientes
     if (nombreVista === 'calculadora') {
         vistaCalculadora.classList.remove('hidden');
-        btnCalculadora.className = activeClass;
+        if(btnCalculadora) btnCalculadora.className = activeClass;
+        if(btnCalculadoraMovil) btnCalculadoraMovil.className = activeMovilClass;
     } else if (nombreVista === 'leyes') {
         vistaLeyes.classList.remove('hidden');
-        btnLeyes.className = activeClass;
+        if(btnLeyes) btnLeyes.className = activeClass;
+        if(btnLeyesMovil) btnLeyesMovil.className = activeMovilClass;
     } else if (nombreVista === 'contacto') {
         vistaContacto.classList.remove('hidden');
-        btnContacto.className = activeClass;
+        if(btnContacto) btnContacto.className = activeClass;
+        if(btnContactoMovil) btnContactoMovil.className = activeMovilClass;
     } else if (nombreVista === 'privacidad') {
         vistaPrivacidad.classList.remove('hidden');
-        btnPrivacidad.className = activeClass;
+        if(btnPrivacidad) btnPrivacidad.className = activeClass;
+        if(btnPrivacidadMovil) btnPrivacidadMovil.className = activeMovilClass;
     }
 }
 
-// Event Listeners
-btnCalculadora.addEventListener('click', () => mostrarVista('calculadora'));
-btnLeyes.addEventListener('click', () => mostrarVista('leyes'));
-btnContacto.addEventListener('click', () => mostrarVista('contacto'));
-btnPrivacidad.addEventListener('click', () => mostrarVista('privacidad'));
+// Event Listeners Escritorio
+if(btnCalculadora) btnCalculadora.addEventListener('click', () => mostrarVista('calculadora'));
+if(btnLeyes) btnLeyes.addEventListener('click', () => mostrarVista('leyes'));
+if(btnContacto) btnContacto.addEventListener('click', () => mostrarVista('contacto'));
+if(btnPrivacidad) btnPrivacidad.addEventListener('click', () => mostrarVista('privacidad'));
+
+// Event Listeners Móvil
+if(btnCalculadoraMovil) btnCalculadoraMovil.addEventListener('click', () => mostrarVista('calculadora'));
+if(btnLeyesMovil) btnLeyesMovil.addEventListener('click', () => mostrarVista('leyes'));
+if(btnContactoMovil) btnContactoMovil.addEventListener('click', () => mostrarVista('contacto'));
+if(btnPrivacidadMovil) btnPrivacidadMovil.addEventListener('click', () => mostrarVista('privacidad'));
+
 
 
 // ==========================================
