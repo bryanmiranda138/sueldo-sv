@@ -90,50 +90,50 @@ function mostrarVista(nombreVista) {
     // Clases Escritorio
     const inactiveClass = "tab-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-all duration-200 text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-700/50 border border-transparent whitespace-nowrap";
     const activeClass = "tab-btn active-tab px-3 py-1.5 text-xs sm:text-sm font-semibold rounded-md transition-all duration-200 bg-white dark:bg-slate-700 shadow-sm text-blue-600 dark:text-blue-400 border border-slate-200/50 dark:border-slate-600 whitespace-nowrap";
-    
+
     // Clases Móvil
     const inactiveMovilClass = "w-full text-left px-4 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg";
     const activeMovilClass = "w-full text-left px-4 py-2.5 text-sm font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-slate-700/50 rounded-lg";
 
     // 4. Desactivar estilos de TODOS los botones (Escritorio y Móvil)
     [btnCalculadora, btnLeyes, btnContacto, btnPrivacidad].forEach(btn => {
-        if(btn) btn.className = inactiveClass;
+        if (btn) btn.className = inactiveClass;
     });
     [btnCalculadoraMovil, btnLeyesMovil, btnContactoMovil, btnPrivacidadMovil].forEach(btn => {
-        if(btn) btn.className = inactiveMovilClass;
+        if (btn) btn.className = inactiveMovilClass;
     });
 
     // 5. Activar la vista y encender los botones seleccionados correspondientes
     if (nombreVista === 'calculadora') {
         vistaCalculadora.classList.remove('hidden');
-        if(btnCalculadora) btnCalculadora.className = activeClass;
-        if(btnCalculadoraMovil) btnCalculadoraMovil.className = activeMovilClass;
+        if (btnCalculadora) btnCalculadora.className = activeClass;
+        if (btnCalculadoraMovil) btnCalculadoraMovil.className = activeMovilClass;
     } else if (nombreVista === 'leyes') {
         vistaLeyes.classList.remove('hidden');
-        if(btnLeyes) btnLeyes.className = activeClass;
-        if(btnLeyesMovil) btnLeyesMovil.className = activeMovilClass;
+        if (btnLeyes) btnLeyes.className = activeClass;
+        if (btnLeyesMovil) btnLeyesMovil.className = activeMovilClass;
     } else if (nombreVista === 'contacto') {
         vistaContacto.classList.remove('hidden');
-        if(btnContacto) btnContacto.className = activeClass;
-        if(btnContactoMovil) btnContactoMovil.className = activeMovilClass;
+        if (btnContacto) btnContacto.className = activeClass;
+        if (btnContactoMovil) btnContactoMovil.className = activeMovilClass;
     } else if (nombreVista === 'privacidad') {
         vistaPrivacidad.classList.remove('hidden');
-        if(btnPrivacidad) btnPrivacidad.className = activeClass;
-        if(btnPrivacidadMovil) btnPrivacidadMovil.className = activeMovilClass;
+        if (btnPrivacidad) btnPrivacidad.className = activeClass;
+        if (btnPrivacidadMovil) btnPrivacidadMovil.className = activeMovilClass;
     }
 }
 
 // Event Listeners Escritorio
-if(btnCalculadora) btnCalculadora.addEventListener('click', () => mostrarVista('calculadora'));
-if(btnLeyes) btnLeyes.addEventListener('click', () => mostrarVista('leyes'));
-if(btnContacto) btnContacto.addEventListener('click', () => mostrarVista('contacto'));
-if(btnPrivacidad) btnPrivacidad.addEventListener('click', () => mostrarVista('privacidad'));
+if (btnCalculadora) btnCalculadora.addEventListener('click', () => mostrarVista('calculadora'));
+if (btnLeyes) btnLeyes.addEventListener('click', () => mostrarVista('leyes'));
+if (btnContacto) btnContacto.addEventListener('click', () => mostrarVista('contacto'));
+if (btnPrivacidad) btnPrivacidad.addEventListener('click', () => mostrarVista('privacidad'));
 
 // Event Listeners Móvil
-if(btnCalculadoraMovil) btnCalculadoraMovil.addEventListener('click', () => mostrarVista('calculadora'));
-if(btnLeyesMovil) btnLeyesMovil.addEventListener('click', () => mostrarVista('leyes'));
-if(btnContactoMovil) btnContactoMovil.addEventListener('click', () => mostrarVista('contacto'));
-if(btnPrivacidadMovil) btnPrivacidadMovil.addEventListener('click', () => mostrarVista('privacidad'));
+if (btnCalculadoraMovil) btnCalculadoraMovil.addEventListener('click', () => mostrarVista('calculadora'));
+if (btnLeyesMovil) btnLeyesMovil.addEventListener('click', () => mostrarVista('leyes'));
+if (btnContactoMovil) btnContactoMovil.addEventListener('click', () => mostrarVista('contacto'));
+if (btnPrivacidadMovil) btnPrivacidadMovil.addEventListener('click', () => mostrarVista('privacidad'));
 
 
 
@@ -291,8 +291,8 @@ document.getElementById('calcForm').addEventListener('submit', function (e) {
     document.getElementById('print_datetime').textContent = `${fechaImpresion}, ${horaImpresion}`;
 
 
-    // ==========================================
-// 3. ENVÍO DE FORMULARIO DE CONTACTO (Netlify AJAX)
+ // ==========================================
+// 3. ENVÍO DE FORMULARIO DE CONTACTO (Netlify AJAX Seguro)
 // ==========================================
 const formContacto = document.getElementById('form-contacto');
 const mensajeExito = document.getElementById('mensaje-exito');
@@ -300,59 +300,73 @@ const btnNuevoMensaje = document.getElementById('btn-nuevo-mensaje');
 
 if (formContacto) {
     formContacto.addEventListener('submit', function(e) {
-        e.preventDefault(); // Evita que el navegador recargue o cambie de página
+        // 1. Bloqueo absoluto del comportamiento por defecto del navegador
+        e.preventDefault(); 
+        e.stopPropagation(); 
 
-        // Cambiar el texto del botón temporalmente para dar feedback visual
         const btnSubmit = formContacto.querySelector('button[type="submit"]');
         const originalText = btnSubmit.innerHTML;
+        
+        // Cambiar botón a estado de carga
         btnSubmit.innerHTML = '<i class="bi bi-hourglass-split animate-spin"></i> Enviando...';
         btnSubmit.disabled = true;
 
-        // Recolectar los datos del formulario
+        // Recolectar datos de forma 100% compatible con todos los navegadores
         const formData = new FormData(formContacto);
+        const data = new URLSearchParams();
+        for (const pair of formData) {
+            data.append(pair[0], pair[1]);
+        }
 
-        // Enviar a Netlify usando Fetch API
-        fetch('/', {
-            method: 'POST',
+        // Enviar a Netlify de forma silenciosa
+        fetch("/", {
+            method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString()
+            body: data.toString()
         })
-        .then(() => {
-            // Ocultar formulario
-            formContacto.classList.add('hidden');
-            
-            // Mostrar mensaje de éxito con animación
-            mensajeExito.classList.remove('hidden');
-            mensajeExito.classList.add('flex');
-            
-            // Pequeño retraso para que la animación de Tailwind funcione
-            setTimeout(() => {
-                mensajeExito.classList.remove('opacity-0', 'scale-95');
-                mensajeExito.classList.add('opacity-100', 'scale-100');
-            }, 50);
-
-            // Resetear el formulario para futuros usos
-            formContacto.reset();
-            btnSubmit.innerHTML = originalText;
-            btnSubmit.disabled = false;
+        .then(response => {
+            if (response.ok) {
+                // Ocultar formulario
+                formContacto.classList.add('hidden');
+                
+                // Mostrar tarjeta de éxito elegante
+                if (mensajeExito) {
+                    mensajeExito.classList.remove('hidden');
+                    mensajeExito.classList.add('flex');
+                    setTimeout(() => {
+                        mensajeExito.classList.remove('opacity-0', 'scale-95');
+                        mensajeExito.classList.add('opacity-100', 'scale-100');
+                    }, 50);
+                }
+                
+                // Limpiar los campos del formulario
+                formContacto.reset();
+            } else {
+                throw new Error("Error en la respuesta del servidor");
+            }
         })
         .catch((error) => {
-            alert('Hubo un problema de conexión al enviar el mensaje. Por favor, intenta de nuevo.');
+            // Si el usuario no tiene internet o Netlify falla
+            alert('Hubo un problema de conexión al enviar el mensaje. Por favor, revisa tu internet e intenta de nuevo.');
+        })
+        .finally(() => {
+            // Restaurar el botón siempre (ya sea que triunfe o falle)
             btnSubmit.innerHTML = originalText;
             btnSubmit.disabled = false;
         });
     });
 }
 
-// Botón para volver a mostrar el formulario si quieren enviar otro
+// Lógica del botón "Enviar otro mensaje"
 if (btnNuevoMensaje) {
     btnNuevoMensaje.addEventListener('click', () => {
-        // Ocultar éxito
-        mensajeExito.classList.add('hidden', 'opacity-0', 'scale-95');
-        mensajeExito.classList.remove('flex', 'opacity-100', 'scale-100');
-        
-        // Mostrar formulario
-        formContacto.classList.remove('hidden');
+        if (mensajeExito) {
+            mensajeExito.classList.add('hidden', 'opacity-0', 'scale-95');
+            mensajeExito.classList.remove('flex', 'opacity-100', 'scale-100');
+        }
+        if (formContacto) {
+            formContacto.classList.remove('hidden');
+        }
     });
 }
 });

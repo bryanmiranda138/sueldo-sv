@@ -65,71 +65,92 @@
         </p>
     </div>
 
-    <nav class="sticky top-0 z-50 bg-white/80 dark:bg-slate-800/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-700 shadow-sm no-print transition-colors duration-300">
+    <nav
+        class="sticky top-0 z-50 bg-white/80 dark:bg-slate-800/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-700 shadow-sm no-print transition-colors duration-300">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                
+
                 <div class="flex items-center gap-3 cursor-default">
-                    <div class="w-10 h-10 flex flex-col rounded-lg shadow-md shadow-blue-500/30 overflow-hidden border border-slate-200 dark:border-slate-700 flex-shrink-0">
+                    <div
+                        class="w-10 h-10 flex flex-col rounded-lg shadow-md shadow-blue-500/30 overflow-hidden border border-slate-200 dark:border-slate-700 flex-shrink-0">
                         <div class="h-1/3 w-full bg-blue-600 dark:bg-blue-500"></div>
                         <div class="h-1/3 w-full bg-white flex items-center justify-center">
                             <span class="text-[10px] font-extrabold text-blue-700 leading-none">SV</span>
                         </div>
                         <div class="h-1/3 w-full bg-blue-600 dark:bg-blue-500"></div>
                     </div>
-                    <span class="font-extrabold text-xl tracking-tight text-slate-900 dark:text-white">Sueldo<span class="text-blue-600 dark:text-blue-400">-SV</span></span>
+                    <span class="font-extrabold text-xl tracking-tight text-slate-900 dark:text-white">Sueldo<span
+                            class="text-blue-600 dark:text-blue-400">-SV</span></span>
                 </div>
 
                 <div class="flex items-center gap-4">
-                    
-                    <div class="hidden md:flex space-x-1 bg-slate-100/50 dark:bg-slate-900/50 p-1 rounded-lg border border-slate-200 dark:border-slate-700 overflow-x-auto">
-                        <button id="btn-calculadora" class="tab-btn active-tab px-3 py-1.5 text-xs sm:text-sm font-semibold rounded-md transition-all duration-200 bg-white dark:bg-slate-700 shadow-sm text-blue-600 dark:text-blue-400 border border-slate-200/50 dark:border-slate-600 whitespace-nowrap">
+
+                    <div
+                        class="hidden md:flex space-x-1 bg-slate-100/50 dark:bg-slate-900/50 p-1 rounded-lg border border-slate-200 dark:border-slate-700 overflow-x-auto">
+                        <button id="btn-calculadora"
+                            class="tab-btn active-tab px-3 py-1.5 text-xs sm:text-sm font-semibold rounded-md transition-all duration-200 bg-white dark:bg-slate-700 shadow-sm text-blue-600 dark:text-blue-400 border border-slate-200/50 dark:border-slate-600 whitespace-nowrap">
                             Cálculo Salarial
                         </button>
-                        <button id="btn-leyes" class="tab-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-all duration-200 text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-700/50 border border-transparent whitespace-nowrap">
+                        <button id="btn-leyes"
+                            class="tab-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-all duration-200 text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-700/50 border border-transparent whitespace-nowrap">
                             Leyes (SV)
                         </button>
-                        <button id="btn-contacto" class="tab-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-all duration-200 text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-700/50 border border-transparent whitespace-nowrap">
+                        <button id="btn-contacto"
+                            class="tab-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-all duration-200 text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-700/50 border border-transparent whitespace-nowrap">
                             Contacto
                         </button>
-                        <button id="btn-privacidad" class="tab-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-all duration-200 text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-700/50 border border-transparent whitespace-nowrap">
+                        <button id="btn-privacidad"
+                            class="tab-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-all duration-200 text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-700/50 border border-transparent whitespace-nowrap">
                             Privacidad
                         </button>
                     </div>
 
                     <div class="flex items-center gap-2">
-                        
-                        <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
-                            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+
+                        <button id="theme-toggle"
+                            class="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                             </svg>
-                            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                    fill-rule="evenodd" clip-rule="evenodd"></path>
                             </svg>
                         </button>
 
-                        <button id="btn-menu-movil" class="md:hidden p-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        <button id="btn-menu-movil"
+                            class="md:hidden p-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
                             </svg>
                         </button>
-                        
+
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="menu-movil" class="hidden md:hidden border-t border-slate-200 dark:border-slate-700 bg-white/95 dark:bg-slate-800/95 backdrop-blur-md px-4 py-3 space-y-2 transition-all shadow-md">
-            <button id="btn-calculadora-movil" class="w-full text-left px-4 py-2.5 text-sm font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-slate-700/50 rounded-lg">
+        <div id="menu-movil"
+            class="hidden md:hidden border-t border-slate-200 dark:border-slate-700 bg-white/95 dark:bg-slate-800/95 backdrop-blur-md px-4 py-3 space-y-2 transition-all shadow-md">
+            <button id="btn-calculadora-movil"
+                class="w-full text-left px-4 py-2.5 text-sm font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-slate-700/50 rounded-lg">
                 Cálculo Salarial
             </button>
-            <button id="btn-leyes-movil" class="w-full text-left px-4 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg">
+            <button id="btn-leyes-movil"
+                class="w-full text-left px-4 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg">
                 Leyes (SV)
             </button>
-            <button id="btn-contacto-movil" class="w-full text-left px-4 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg">
+            <button id="btn-contacto-movil"
+                class="w-full text-left px-4 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg">
                 Contacto
             </button>
-            <button id="btn-privacidad-movil" class="w-full text-left px-4 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg">
+            <button id="btn-privacidad-movil"
+                class="w-full text-left px-4 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg">
                 Privacidad
             </button>
         </div>
@@ -798,20 +819,23 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                    
-                    <div class="p-4 bg-slate-50 dark:bg-slate-900/50 rounded-xl border border-slate-200 dark:border-slate-700 flex items-center gap-4">
+
+                    <div
+                        class="p-4 bg-slate-50 dark:bg-slate-900/50 rounded-xl border border-slate-200 dark:border-slate-700 flex items-center gap-4">
                         <div class="p-3 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-lg">
                             <i class="bi bi-envelope-at text-xl"></i>
                         </div>
                         <div>
                             <span class="block text-xs font-semibold text-slate-400 uppercase">Correo Electrónico</span>
-                            <span class="text-sm font-bold text-slate-800 dark:text-slate-100">bryan.miranda138@gmail.com</span>
+                            <span
+                                class="text-sm font-bold text-slate-800 dark:text-slate-100">bryan.miranda138@gmail.com</span>
                         </div>
                     </div>
 
                     <a href="https://wa.me/50378906377" target="_blank"
                         class="p-4 bg-slate-50 dark:bg-slate-900/50 rounded-xl border border-slate-200 dark:border-slate-700 flex items-center gap-4 hover:border-green-500 transition-all cursor-pointer">
-                        <div class="p-3 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-lg">
+                        <div
+                            class="p-3 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-lg">
                             <i class="bi bi-whatsapp text-xl"></i>
                         </div>
                         <div>
@@ -819,37 +843,49 @@
                             <span class="text-sm font-bold text-slate-800 dark:text-slate-100">+503 7890-6377</span>
                         </div>
                     </a>
-                    
+
                 </div>
 
                 <div id="contenedor-contacto">
-                    <form id="form-contacto" name="Contacto Portafolio" method="POST" data-netlify="true" class="space-y-4 bg-slate-50 dark:bg-slate-900/30 p-6 rounded-xl border border-slate-200 dark:border-slate-700 transition-all duration-300">
+                    <form id="form-contacto" name="Contacto Portafolio" method="POST" data-netlify="true"
+                        class="space-y-4 bg-slate-50 dark:bg-slate-900/30 p-6 rounded-xl border border-slate-200 dark:border-slate-700 transition-all duration-300">
                         <input type="hidden" name="form-name" value="Contacto Portafolio" />
-                        
+
                         <div>
-                            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Tu Nombre Completo</label>
-                            <input type="text" name="Nombre" required placeholder="Ej. Juan Pérez" class="w-full px-4 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-slate-800 dark:text-slate-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Tu Nombre
+                                Completo</label>
+                            <input type="text" name="Nombre" required placeholder="Ej. Juan Pérez"
+                                class="w-full px-4 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-slate-800 dark:text-slate-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
                         </div>
                         <div>
-                            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Correo Electrónico de Respuesta</label>
-                            <input type="email" name="Correo" required placeholder="ejemplo@correo.com" class="w-full px-4 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-slate-800 dark:text-slate-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Correo
+                                Electrónico de Respuesta</label>
+                            <input type="email" name="Correo" required placeholder="ejemplo@correo.com"
+                                class="w-full px-4 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-slate-800 dark:text-slate-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
                         </div>
                         <div>
-                            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Mensaje o Consulta</label>
-                            <textarea name="Mensaje" rows="4" required placeholder="Escribe aquí tu consulta..." class="w-full px-4 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-slate-800 dark:text-slate-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Mensaje o
+                                Consulta</label>
+                            <textarea name="Mensaje" rows="4" required placeholder="Escribe aquí tu consulta..."
+                                class="w-full px-4 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-slate-800 dark:text-slate-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 rounded-lg text-sm transition-all shadow-md shadow-blue-500/20 flex justify-center items-center gap-2">
+                        <button type="submit"
+                            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 rounded-lg text-sm transition-all shadow-md shadow-blue-500/20 flex justify-center items-center gap-2">
                             <i class="bi bi-send"></i> Enviar Mensaje
                         </button>
                     </form>
 
-                    <div id="mensaje-exito" class="hidden flex-col items-center justify-center p-8 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800/50 rounded-xl text-center transition-all duration-300 opacity-0 scale-95">
-                        <div class="w-16 h-16 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-400 rounded-full flex items-center justify-center mb-4 shadow-sm shadow-emerald-500/20">
+                    <div id="mensaje-exito"
+                        class="hidden flex-col items-center justify-center p-8 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800/50 rounded-xl text-center transition-all duration-300 opacity-0 scale-95">
+                        <div
+                            class="w-16 h-16 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-400 rounded-full flex items-center justify-center mb-4 shadow-sm shadow-emerald-500/20">
                             <i class="bi bi-check-circle-fill text-3xl"></i>
                         </div>
                         <h3 class="text-xl font-bold text-slate-800 dark:text-slate-100 mb-2">¡Mensaje Enviado!</h3>
-                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-5">Gracias por contactarme. He recibido tu mensaje y te responderé lo más pronto posible al correo que me proporcionaste.</p>
-                        <button id="btn-nuevo-mensaje" type="button" class="px-5 py-2 bg-white dark:bg-slate-700 hover:bg-slate-100 dark:hover:bg-slate-600 border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 text-sm font-semibold rounded-lg transition-colors">
+                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-5">Gracias por contactarme. He recibido
+                            tu mensaje y te responderé lo más pronto posible al correo que me proporcionaste.</p>
+                        <button id="btn-nuevo-mensaje" type="button"
+                            class="px-5 py-2 bg-white dark:bg-slate-700 hover:bg-slate-100 dark:hover:bg-slate-600 border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 text-sm font-semibold rounded-lg transition-colors">
                             Enviar otro mensaje
                         </button>
                     </div>
@@ -944,11 +980,10 @@
                     <i class="bi bi-linkedin text-blue-600 dark:text-blue-400 text-base"></i> LinkedIn
                 </a>
                 <span class="text-slate-300 dark:text-slate-600">|</span>
-                <a href="mailto:bryan.miranda138@gmail.com"
-                    class="text-slate-700 dark:text-slate-300 hover:text-red-600 dark:hover:text-red-400 transition-colors flex items-center gap-1"
-                    target="_blank">
+                <button onclick="mostrarVista('contacto')"
+                    class="text-slate-700 dark:text-slate-300 hover:text-red-600 dark:hover:text-red-400 transition-colors flex items-center gap-1 focus:outline-none">
                     <i class="bi bi-envelope text-red-500 text-base"></i> Correo Electrónico
-                </a>
+                </button>
                 <span class="text-slate-300 dark:text-slate-600">|</span>
                 <a href="https://www.facebook.com/B.miranda96/"
                     class="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-1"
