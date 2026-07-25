@@ -48,7 +48,7 @@ Al ser un proyecto estático sin servidor backend (Node.js/PHP), no necesitas in
 
 1. Clona este repositorio:
    ```bash
-   git clone [https://github.com/bryanmiranda138/sv-planilla-pro.git](https://github.com/bryanmiranda138/sv-planilla-pro.git)
+   git clone [https://github.com/bryanmiranda138/sueldo-sv.git](https://github.com/bryanmiranda138/sueldo-sv.git)
 
 ---
 ## 👨‍💻 Autor
