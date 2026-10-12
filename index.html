@@ -85,28 +85,29 @@
 
                 <div class="flex items-center gap-4">
 
+                    <!-- NAVEGACIÓN ESCRITORIO -->
                     <div
                         class="hidden md:flex space-x-1 bg-slate-100/50 dark:bg-slate-900/50 p-1 rounded-lg border border-slate-200 dark:border-slate-700 overflow-x-auto">
-                        <button id="btn-calculadora"
+                        <a href="index.html"
                             class="tab-btn active-tab px-3 py-1.5 text-xs sm:text-sm font-semibold rounded-md transition-all duration-200 bg-white dark:bg-slate-700 shadow-sm text-blue-600 dark:text-blue-400 border border-slate-200/50 dark:border-slate-600 whitespace-nowrap">
                             Cálculo Salarial
-                        </button>
-                        <button id="btn-leyes"
+                        </a>
+                        <a href="leyes.html"
                             class="tab-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-all duration-200 text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-700/50 border border-transparent whitespace-nowrap">
                             Leyes (SV)
-                        </button>
-                        <button id="btn-quienes"
+                        </a>
+                        <a href="quienes.html"
                             class="tab-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-all duration-200 text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-700/50 border border-transparent whitespace-nowrap">
                             Quiénes Somos
-                        </button>
-                        <button id="btn-contacto"
+                        </a>
+                        <a href="contacto.html"
                             class="tab-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-all duration-200 text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-700/50 border border-transparent whitespace-nowrap">
                             Contacto
-                        </button>
-                        <button id="btn-privacidad"
+                        </a>
+                        <a href="privacidad.html"
                             class="tab-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-all duration-200 text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-700/50 border border-transparent whitespace-nowrap">
                             Privacidad
-                        </button>
+                        </a>
                     </div>
 
                     <div class="flex items-center gap-2">
@@ -139,28 +140,29 @@
             </div>
         </div>
 
+        <!-- MENÚ DESPLEGABLE MÓVIL -->
         <div id="menu-movil"
             class="hidden md:hidden border-t border-slate-200 dark:border-slate-700 bg-white/95 dark:bg-slate-800/95 backdrop-blur-md px-4 py-3 space-y-2 transition-all shadow-md">
-            <button id="btn-calculadora-movil"
-                class="w-full text-left px-4 py-2.5 text-sm font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-slate-700/50 rounded-lg">
+            <a href="index.html"
+                class="block w-full text-left px-4 py-2.5 text-sm font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-slate-700/50 rounded-lg">
                 Cálculo Salarial
-            </button>
-            <button id="btn-leyes-movil"
-                class="w-full text-left px-4 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg">
+            </a>
+            <a href="leyes.html"
+                class="block w-full text-left px-4 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg">
                 Leyes (SV)
-            </button>
-            <button id="btn-quienes-movil"
-                class="w-full text-left px-4 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg">
+            </a>
+            <a href="quienes.html"
+                class="block w-full text-left px-4 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg">
                 Quiénes Somos
-            </button>
-            <button id="btn-contacto-movil"
-                class="w-full text-left px-4 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg">
+            </a>
+            <a href="contacto.html"
+                class="block w-full text-left px-4 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg">
                 Contacto
-            </button>
-            <button id="btn-privacidad-movil"
-                class="w-full text-left px-4 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg">
+            </a>
+            <a href="privacidad.html"
+                class="block w-full text-left px-4 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg">
                 Privacidad
-            </button>
+            </a>
         </div>
     </nav>
 
@@ -670,535 +672,6 @@
                 </div>
             </div>
         </div>
-
-        <div id="vista-leyes"
-            class="hidden bg-white dark:bg-slate-800 rounded-2xl shadow-xl shadow-slate-200/50 dark:shadow-none p-6 md:p-8 border border-slate-100 dark:border-slate-700 transition-colors duration-300">
-            <h2
-                class="text-2xl font-extrabold text-slate-800 dark:text-slate-100 mb-6 border-b border-slate-200 dark:border-slate-700 pb-3 tracking-tight">
-                Marco Legal (El Salvador)</h2>
-
-            <div class="space-y-8">
-                <section>
-                    <h3 class="text-lg font-bold text-blue-600 dark:text-blue-400 mb-3 flex items-center gap-2">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
-                            </path>
-                        </svg>
-                        Descuentos de Ley
-                    </h3>
-                    <ul class="space-y-3 text-slate-600 dark:text-slate-300">
-                        <li class="flex gap-2">
-                            <span class="text-blue-500 dark:text-blue-400 mt-1">•</span>
-                            <span><strong class="text-slate-800 dark:text-slate-100">ISSS (Seguro Social):</strong>
-                                Empleado aporta 3%, Patrono 7.5%. Límite máximo cotizable: $1,000.</span>
-                        </li>
-                        <li class="flex gap-2">
-                            <span class="text-blue-500 dark:text-blue-400 mt-1">•</span>
-                            <span><strong class="text-slate-800 dark:text-slate-100">AFP (Pensiones):</strong> Empleado
-                                aporta 7.25%, Patrono 8.75%. Techo salarial de $7,045.06 (según última reforma).</span>
-                        </li>
-                        <li class="flex gap-2">
-                            <span class="text-blue-500 dark:text-blue-400 mt-1">•</span>
-                            <div class="w-full">
-                                <strong class="text-slate-800 dark:text-slate-100">Renta (ISR):</strong>
-                                <span class="text-slate-600 dark:text-slate-300">Calculado sobre el salario gravado
-                                    (Salario - ISSS - AFP) aplicando los 4 tramos establecidos por el Ministerio de
-                                    Hacienda:</span>
-
-                                <div
-                                    class="mt-4 bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm grid grid-cols-1 sm:grid-cols-2 gap-3">
-
-                                    <div
-                                        class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-lg border border-transparent dark:border-slate-700">
-                                        <span class="block font-bold text-slate-800 dark:text-slate-100">Tramo I <span
-                                                class="text-xs font-normal text-slate-500 dark:text-slate-400 ml-1">(Hasta
-                                                $472.00)</span></span>
-                                        <span
-                                            class="text-sm text-emerald-600 dark:text-emerald-400 font-semibold mt-1 block">Sin
-                                            retención (Exento)</span>
-                                    </div>
-
-                                    <div
-                                        class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-lg border border-transparent dark:border-slate-700">
-                                        <span class="block font-bold text-slate-800 dark:text-slate-100">Tramo II <span
-                                                class="text-xs font-normal text-slate-500 dark:text-slate-400 ml-1">($472.01
-                                                a $895.24)</span></span>
-                                        <span
-                                            class="text-sm text-blue-600 dark:text-blue-400 font-semibold mt-1 block">10%
-                                            sobre el exceso de $472.00 + $17.67</span>
-                                    </div>
-
-                                    <div
-                                        class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-lg border border-transparent dark:border-slate-700">
-                                        <span class="block font-bold text-slate-800 dark:text-slate-100">Tramo III <span
-                                                class="text-xs font-normal text-slate-500 dark:text-slate-400 ml-1">($895.25
-                                                a $2,038.10)</span></span>
-                                        <span
-                                            class="text-sm text-blue-600 dark:text-blue-400 font-semibold mt-1 block">20%
-                                            sobre el exceso de $895.24 + $60.00</span>
-                                    </div>
-
-                                    <div
-                                        class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-lg border border-transparent dark:border-slate-700">
-                                        <span class="block font-bold text-slate-800 dark:text-slate-100">Tramo IV <span
-                                                class="text-xs font-normal text-slate-500 dark:text-slate-400 ml-1">($2,038.11
-                                                en adelante)</span></span>
-                                        <span
-                                            class="text-sm text-blue-600 dark:text-blue-400 font-semibold mt-1 block">30%
-                                            sobre el exceso de $2,038.10 + $288.57</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h3 class="text-lg font-bold text-blue-600 dark:text-blue-400 mb-3 flex items-center gap-2">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
-                            </path>
-                        </svg>
-                        Prestaciones Anuales
-                    </h3>
-                    <ul class="space-y-3 text-slate-600 dark:text-slate-300">
-                        <li class="flex gap-2">
-                            <span class="text-blue-500 dark:text-blue-400 mt-1">•</span>
-                            <span><strong class="text-slate-800 dark:text-slate-100">Vacaciones:</strong> Derecho a 15
-                                días de salario más una prima del 30% adicional sobre esos 15 días (Art. 177, Código de
-                                Trabajo).</span>
-                        </li>
-                        <li class="flex gap-2">
-                            <span class="text-blue-500 dark:text-blue-400 mt-1">•</span>
-                            <span><strong class="text-slate-800 dark:text-slate-100">Aguinaldo:</strong> 1 a 3 años = 15
-                                días | 3 a 10 años = 19 días | 10+ años = 21 días (Art. 198, Código de Trabajo).</span>
-                        </li>
-                        <li class="flex gap-2">
-                            <span class="text-blue-500 dark:text-blue-400 mt-1">•</span>
-                            <span><strong class="text-slate-800 dark:text-slate-100">Fecha Límite de Pago del
-                                    Aguinaldo:</strong>
-                                20 de Diciembre. (Art. 200, Código de Trabajo)</span>
-                        </li>
-                        <li class="flex gap-2">
-                            <span class="text-blue-500 dark:text-blue-400 mt-1">•</span>
-                            <span><strong class="text-slate-800 dark:text-slate-100">Quincena 25:</strong> Beneficio
-                                extra-ley (corporativo) que otorgan algunas empresas usualmente en el mes de
-                                Enero.</span>
-                        </li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h3 class="text-lg font-bold text-blue-600 dark:text-blue-400 mb-3 flex items-center gap-2">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                        Cálculo de Horas Extras (Código de Trabajo)
-                    </h3>
-                    <p
-                        class="text-sm text-slate-500 dark:text-slate-400 mb-4 bg-slate-50 dark:bg-slate-900/50 p-3 rounded-lg border border-slate-100 dark:border-slate-700">
-                        Para el cálculo estándar se asume una jornada diurna de 8 horas diarias y un mes de 30 días.</p>
-                    <div
-                        class="bg-white dark:bg-slate-800 p-5 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div
-                            class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-lg border border-transparent dark:border-slate-700">
-                            <span class="block font-bold text-slate-800 dark:text-slate-100">Hora Extra Diurna</span>
-                            <span class="text-sm text-blue-600 dark:text-blue-400 font-semibold mt-1 block">Salario base
-                                por hora × 2.00</span>
-                        </div>
-                        <div
-                            class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-lg border border-transparent dark:border-slate-700">
-                            <span class="block font-bold text-slate-800 dark:text-slate-100">Hora Extra Nocturna</span>
-                            <span class="text-sm text-blue-600 dark:text-blue-400 font-semibold mt-1 block">Salario base
-                                por hora × 2.25</span>
-                        </div>
-                        <div
-                            class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-lg border border-transparent dark:border-slate-700">
-                            <span class="block font-bold text-slate-800 dark:text-slate-100">Día Libre (Diurna)</span>
-                            <span class="text-sm text-blue-600 dark:text-blue-400 font-semibold mt-1 block">Salario base
-                                por hora × 1.50</span>
-                        </div>
-                        <div
-                            class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-lg border border-transparent dark:border-slate-700">
-                            <span class="block font-bold text-slate-800 dark:text-slate-100">Día Libre (Nocturna)</span>
-                            <span class="text-sm text-blue-600 dark:text-blue-400 font-semibold mt-1 block">Salario base
-                                por hora × 1.75</span>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 class="text-lg font-bold text-blue-600 dark:text-blue-400 mb-3 flex items-center gap-2">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
-                            </path>
-                        </svg>
-                        Días Festivos y Asuetos Remunerados (Art. 190, Código de Trabajo)
-                    </h3>
-
-                    <p class="text-sm text-slate-600 dark:text-slate-300 mb-4">
-                        Por ley, los días de asueto son descansos remunerados. Si un colaborador labora en cualquiera de
-                        estas fechas, el empleador está obligado a pagar un <strong>salario extraordinario equivalente
-                            al 100% de recargo (pago doble)</strong> sobre la jornada ordinaria.
-                    </p>
-
-                    <div
-                        class="bg-white dark:bg-slate-800 p-5 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-
-                        <div
-                            class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-lg border border-transparent dark:border-slate-700 flex items-center gap-3">
-                            <span
-                                class="bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 font-extrabold text-xs px-2.5 py-1.5 rounded-md">1
-                                ENE</span>
-                            <div>
-                                <span class="block font-bold text-slate-800 dark:text-slate-100 text-sm">Año
-                                    Nuevo</span>
-                                <span class="text-xs text-slate-500 dark:text-slate-400">Inicio de año civil</span>
-                            </div>
-                        </div>
-
-                        <div
-                            class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-lg border border-transparent dark:border-slate-700 flex items-center gap-3">
-                            <span
-                                class="bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 font-extrabold text-xs px-2.5 py-1.5 rounded-md">MAR
-                                / ABR</span>
-                            <div>
-                                <span class="block font-bold text-slate-800 dark:text-slate-100 text-sm">Semana
-                                    Santa</span>
-                                <span class="text-xs text-slate-500 dark:text-slate-400">Jueves, Viernes y Sábado
-                                    Santo</span>
-                            </div>
-                        </div>
-
-                        <div
-                            class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-lg border border-transparent dark:border-slate-700 flex items-center gap-3">
-                            <span
-                                class="bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 font-extrabold text-xs px-2.5 py-1.5 rounded-md">1
-                                MAY</span>
-                            <div>
-                                <span class="block font-bold text-slate-800 dark:text-slate-100 text-sm">Día del
-                                    Trabajo</span>
-                                <span class="text-xs text-slate-500 dark:text-slate-400">Conmemoración
-                                    internacional</span>
-                            </div>
-                        </div>
-
-                        <div
-                            class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-lg border border-transparent dark:border-slate-700 flex items-center gap-3">
-                            <span
-                                class="bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 font-extrabold text-xs px-2.5 py-1.5 rounded-md">10
-                                MAY</span>
-                            <div>
-                                <span class="block font-bold text-slate-800 dark:text-slate-100 text-sm">Día de la
-                                    Madre</span>
-                                <span class="text-xs text-slate-500 dark:text-slate-400">Celebración nacional</span>
-                            </div>
-                        </div>
-
-                        <div
-                            class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-lg border border-transparent dark:border-slate-700 flex items-center gap-3">
-                            <span
-                                class="bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 font-extrabold text-xs px-2.5 py-1.5 rounded-md">17
-                                JUN</span>
-                            <div>
-                                <span class="block font-bold text-slate-800 dark:text-slate-100 text-sm">Día del
-                                    Padre</span>
-                                <span class="text-xs text-slate-500 dark:text-slate-400">Celebración nacional</span>
-                            </div>
-                        </div>
-
-                        <div
-                            class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-lg border border-transparent dark:border-slate-700 flex items-center gap-3">
-                            <span
-                                class="bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 font-extrabold text-xs px-2.5 py-1.5 rounded-md">6
-                                AGO</span>
-                            <div>
-                                <span class="block font-bold text-slate-800 dark:text-slate-100 text-sm">Fiestas
-                                    Agostinas</span>
-                                <span class="text-xs text-slate-500 dark:text-slate-400">Divino Salvador del
-                                    Mundo</span>
-                            </div>
-                        </div>
-
-                        <div
-                            class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-lg border border-transparent dark:border-slate-700 flex items-center gap-3">
-                            <span
-                                class="bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 font-extrabold text-xs px-2.5 py-1.5 rounded-md">15
-                                SEP</span>
-                            <div>
-                                <span class="block font-bold text-slate-800 dark:text-slate-100 text-sm">Independencia
-                                    Patria</span>
-                                <span class="text-xs text-slate-500 dark:text-slate-400">Fiesta nacional</span>
-                            </div>
-                        </div>
-
-                        <div
-                            class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-lg border border-transparent dark:border-slate-700 flex items-center gap-3">
-                            <span
-                                class="bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 font-extrabold text-xs px-2.5 py-1.5 rounded-md">2
-                                NOV</span>
-                            <div>
-                                <span class="block font-bold text-slate-800 dark:text-slate-100 text-sm">Día de los
-                                    Difuntos</span>
-                                <span class="text-xs text-slate-500 dark:text-slate-400">Conmemoración nacional</span>
-                            </div>
-                        </div>
-
-                        <div
-                            class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-lg border border-transparent dark:border-slate-700 flex items-center gap-3">
-                            <span
-                                class="bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 font-extrabold text-xs px-2.5 py-1.5 rounded-md">25
-                                DIC</span>
-                            <div>
-                                <span class="block font-bold text-slate-800 dark:text-slate-100 text-sm">Navidad</span>
-                                <span class="text-xs text-slate-500 dark:text-slate-400">Festividad de fin de año</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-            </div>
-        </div>
-
-        <!-- ============================================== -->
-        <!-- VISTA: QUIÉNES SOMOS (E-E-A-T para Google)     -->
-        <!-- ============================================== -->
-        <div id="vista-quienes"
-            class="hidden bg-white dark:bg-slate-800 rounded-2xl shadow-xl shadow-slate-200/50 dark:shadow-none p-6 md:p-8 border border-slate-100 dark:border-slate-700 transition-colors duration-300">
-            <div class="max-w-3xl mx-auto text-slate-700 dark:text-slate-300">
-
-                <div class="text-center mb-8">
-                    <div
-                        class="w-16 h-16 mx-auto bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 rounded-full flex items-center justify-center mb-4 border border-blue-200/50 dark:border-blue-800/50">
-                        <i class="bi bi-person-badge text-3xl"></i>
-                    </div>
-                    <h2 class="text-2xl font-extrabold text-slate-800 dark:text-slate-100 tracking-tight">Acerca del
-                        Desarrollador</h2>
-                    <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">Conoce el respaldo técnico, ético y
-                        profesional detrás de Sueldo-SV.</p>
-                </div>
-
-                <div class="space-y-6 text-sm md:text-base leading-relaxed">
-                    <p>
-                        ¡Hola! Soy <strong>Ing. Bryan Andres Candelario Miranda</strong>, creador y desarrollador
-                        principal de <strong>Sueldo-SV</strong>.
-                    </p>
-                    <p>
-                        Soy ex alumno y graduado de la <strong>Universidad de El Salvador (UES)</strong> en la carrera
-                        de <strong>Ingeniería de Sistemas Informáticos</strong>. A lo largo de mi trayectoria
-                        profesional, me he especializado en dos pilares críticos de la tecnología moderna: el
-                        <strong>Análisis de Datos</strong> y la <strong>Ciberseguridad</strong>.
-                    </p>
-
-                    <h3
-                        class="text-lg font-bold text-slate-800 dark:text-slate-100 mt-8 mb-3 border-b border-slate-200 dark:border-slate-700 pb-2">
-                        ¿Por qué confiar en los resultados de Sueldo-SV?</h3>
-                    <p>
-                        El diseño y la programación algorítmica de esta plataforma son el resultado directo de la
-                        combinación de mis especialidades académicas y profesionales:
-                    </p>
-                    <ul class="list-disc pl-5 space-y-3 text-slate-600 dark:text-slate-400 mt-4">
-                        <li><strong>Precisión Analítica (Data Analysis):</strong> Se garantizó la integración exacta de
-                            los 4 tramos de retención de renta, cotizaciones porcentuales de AFP (7.25%) e ISSS (3%),
-                            así como las leyes laborales vigentes dictadas por el Ministerio de Hacienda y el Ministerio
-                            de Trabajo de El Salvador, asegurando cálculos financieros milimétricos y libres de errores.
-                        </li>
-                        <li><strong>Seguridad de la Información (Cybersecurity):</strong> La plataforma está diseñada
-                            bajo un estricto modelo <em>Client-Side</em>. Ninguno de los salarios, fechas o datos
-                            financieros que ingreses en nuestra calculadora se guarda en bases de datos ni se envía a
-                            servidores de terceros, protegiendo en todo momento la confidencialidad de tu información
-                            personal.</li>
-                    </ul>
-
-                    <div
-                        class="bg-blue-50 dark:bg-slate-900/30 p-5 rounded-xl border border-blue-100 dark:border-slate-700/50 mt-8 flex flex-col sm:flex-row items-center sm:items-start gap-5">
-                        <div class="text-blue-500 dark:text-blue-400">
-                            <i class="bi bi-shield-check text-4xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-slate-800 dark:text-slate-100">Compromiso Tecnológico y
-                                Transparencia</h4>
-                            <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">
-                                Mi objetivo principal es seguir aportando herramientas tecnológicas gratuitas, precisas
-                                y de alto impacto para la sociedad salvadoreña. Al ofrecer total transparencia sobre
-                                cómo se manejan tus datos, busco construir un entorno digital confiable. Si buscas
-                                asesoría en desarrollo de software, análisis de datos o deseas conectar
-                                profesionalmente, te invito a visitar la pestaña de Contacto.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="vista-contacto"
-            class="hidden bg-white dark:bg-slate-800 rounded-2xl shadow-xl shadow-slate-200/50 dark:shadow-none p-6 md:p-8 border border-slate-100 dark:border-slate-700 transition-colors duration-300">
-            <div class="max-w-3xl mx-auto">
-                <div class="text-center mb-8">
-                    <div
-                        class="w-12 h-12 mx-auto bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 rounded-2xl flex items-center justify-center mb-3 border border-blue-200/50 dark:border-blue-800/50">
-                        <i class="bi bi-envelope-paper text-xl"></i>
-                    </div>
-                    <h2 class="text-2xl font-extrabold text-slate-800 dark:text-slate-100 tracking-tight">Ponte en
-                        Contacto</h2>
-                    <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
-                        ¿Tienes dudas sobre los cálculos, sugerencias o consultas comerciales? Escríbenos directamente.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-
-                    <div
-                        class="p-4 bg-slate-50 dark:bg-slate-900/50 rounded-xl border border-slate-200 dark:border-slate-700 flex items-center gap-4">
-                        <div class="p-3 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-lg">
-                            <i class="bi bi-envelope-at text-xl"></i>
-                        </div>
-                        <div>
-                            <span class="block text-xs font-semibold text-slate-400 uppercase">Correo Electrónico</span>
-                            <span
-                                class="text-sm font-bold text-slate-800 dark:text-slate-100">bryan.miranda138@gmail.com</span>
-                        </div>
-                    </div>
-
-                    <a href="https://wa.me/50378906377" target="_blank"
-                        class="p-4 bg-slate-50 dark:bg-slate-900/50 rounded-xl border border-slate-200 dark:border-slate-700 flex items-center gap-4 hover:border-green-500 transition-all cursor-pointer">
-                        <div
-                            class="p-3 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-lg">
-                            <i class="bi bi-whatsapp text-xl"></i>
-                        </div>
-                        <div>
-                            <span class="block text-xs font-semibold text-slate-400 uppercase">WhatsApp Directo</span>
-                            <span class="text-sm font-bold text-slate-800 dark:text-slate-100">+503 7890-6377</span>
-                        </div>
-                    </a>
-
-                </div>
-
-                <div id="contenedor-contacto">
-                    <form id="form-contacto" name="Contacto Portafolio" method="POST" data-netlify="true"
-                        class="space-y-4 bg-slate-50 dark:bg-slate-900/30 p-6 rounded-xl border border-slate-200 dark:border-slate-700 transition-all duration-300">
-                        <input type="hidden" name="form-name" value="Contacto Portafolio" />
-
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Tu Nombre
-                                Completo</label>
-                            <input type="text" name="Nombre" required placeholder="Ej. Juan Pérez"
-                                class="w-full px-4 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-slate-800 dark:text-slate-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Correo
-                                Electrónico de Respuesta</label>
-                            <input type="email" name="Correo" required placeholder="ejemplo@correo.com"
-                                class="w-full px-4 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-slate-800 dark:text-slate-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Mensaje o
-                                Consulta</label>
-                            <textarea name="Mensaje" rows="4" required placeholder="Escribe aquí tu consulta..."
-                                class="w-full px-4 py-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-slate-800 dark:text-slate-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                        </div>
-                        <button type="submit"
-                            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 rounded-lg text-sm transition-all shadow-md shadow-blue-500/20 flex justify-center items-center gap-2">
-                            <i class="bi bi-send"></i> Enviar Mensaje
-                        </button>
-                    </form>
-
-                    <div id="mensaje-exito"
-                        class="hidden flex-col items-center justify-center p-8 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800/50 rounded-xl text-center transition-all duration-300 opacity-0 scale-95">
-                        <div
-                            class="w-16 h-16 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-400 rounded-full flex items-center justify-center mb-4 shadow-sm shadow-emerald-500/20">
-                            <i class="bi bi-check-circle-fill text-3xl"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-800 dark:text-slate-100 mb-2">¡Mensaje Enviado!</h3>
-                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-5">Gracias por contactarme. He recibido
-                            tu mensaje y te responderé lo más pronto posible al correo que me proporcionaste.</p>
-                        <button id="btn-nuevo-mensaje" type="button"
-                            class="px-5 py-2 bg-white dark:bg-slate-700 hover:bg-slate-100 dark:hover:bg-slate-600 border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 text-sm font-semibold rounded-lg transition-colors">
-                            Enviar otro mensaje
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="vista-privacidad"
-            class="hidden bg-white dark:bg-slate-800 rounded-2xl shadow-xl shadow-slate-200/50 dark:shadow-none p-6 md:p-8 border border-slate-100 dark:border-slate-700 transition-colors duration-300 text-slate-700 dark:text-slate-300 leading-relaxed text-sm space-y-6">
-
-            <div class="border-b border-slate-200 dark:border-slate-700 pb-4">
-                <h2 class="text-2xl font-extrabold text-slate-800 dark:text-slate-100 tracking-tight">Política de
-                    Privacidad</h2>
-                <p class="text-xs text-slate-400 mt-1">Última actualización: Julio de 2026</p>
-            </div>
-
-            <p>
-                En <strong>Sueldo-SV</strong> (accesible desde nuestra web), la privacidad de nuestros visitantes es una
-                de nuestras principales prioridades. Este documento de Política de Privacidad contiene los tipos de
-                información que recopila y registra <strong>Sueldo-SV</strong> y cómo la utilizamos.
-            </p>
-
-            <section class="space-y-2">
-                <h3 class="text-base font-bold text-slate-800 dark:text-slate-100">1. Tratamiento de Datos Salariales y
-                    Almacenamiento Local</h3>
-                <p>
-                    <strong>Sueldo-SV es una herramienta de cálculo cliente (Front-End)</strong>. Toda la información
-                    introducida en los campos de formulario (como salarios brutos, fechas de ingreso y tiempo laborado)
-                    se procesa localmente en el navegador del usuario a través de JavaScript. <strong>No almacenamos,
-                        transmitimos ni vendemos datos financieros personales en servidores externos.</strong>
-                </p>
-            </section>
-
-            <section class="space-y-2">
-                <h3 class="text-base font-bold text-slate-800 dark:text-slate-100">2. Cookies de Google AdSense y Redes
-                    de Anuncios</h3>
-                <p>
-                    Google es uno de los proveedores de terceros en nuestro sitio. También utiliza cookies, conocidas
-                    como cookies de DART, para publicar anuncios a los visitantes de nuestro sitio en función de su
-                    visita a nuestra plataforma y a otros sitios en Internet.
-                </p>
-                <ul class="list-disc pl-5 space-y-1 text-slate-600 dark:text-slate-400">
-                    <li>Google, como proveedor de terceros, utiliza cookies para publicar anuncios en
-                        <strong>Sueldo-SV</strong>.
-                    </li>
-                    <li>El uso de la cookie de DART permite a Google y a sus socios mostrar anuncios basados en las
-                        visitas realizadas por los usuarios a este u otros sitios web.</li>
-                    <li>Los usuarios pueden inhabilitar el uso de la cookie de DART consultando la Política de
-                        Privacidad de la red de anuncios y de contenido de Google en la siguiente URL: <a
-                            href="https://policies.google.com/technologies/ads" target="_blank"
-                            class="text-blue-600 dark:text-blue-400 underline">https://policies.google.com/technologies/ads</a>.
-                    </li>
-                </ul>
-            </section>
-
-            <section class="space-y-2">
-                <h3 class="text-base font-bold text-slate-800 dark:text-slate-100">3. Archivos de Registro (Log Files)
-                </h3>
-                <p>
-                    Sueldo-SV sigue un procedimiento estándar de uso de archivos de registro. Estos archivos registran a
-                    los visitantes cuando visitan sitios web. Las empresas de alojamiento (como Netlify) realizan esto
-                    como parte de la analítica de los servicios de hosting. La información recopilada incluye
-                    direcciones de protocolo de Internet (IP), tipo de navegador, proveedor de servicios de Internet
-                    (ISP), fecha y hora, páginas de referencia/salida y el número de clics.
-                </p>
-            </section>
-
-            <section class="space-y-2">
-                <h3 class="text-base font-bold text-slate-800 dark:text-slate-100">4. Derechos de Privacidad y
-                    Consentimiento</h3>
-                <p>
-                    Al utilizar nuestro sitio web, usted acepta nuestra Política de Privacidad y acepta sus términos y
-                    condiciones. Si tiene preguntas adicionales o requiere más información sobre nuestra Política de
-                    Privacidad, no dude en contactar al administrador a través de nuestro correo electrónico de
-                    contacto: <strong>bryan.miranda138@gmail.com</strong>.
-                </p>
-            </section>
-
-        </div>
-
     </main>
     <footer
         class="bg-white dark:bg-slate-800 text-center py-6 mt-auto border-t-2 border-blue-600 dark:border-blue-500 transition-colors duration-300 no-print w-full">
